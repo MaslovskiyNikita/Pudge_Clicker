@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+          background-image: url('img/BackGround.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 100vh;
+          margin: 0;
+        }
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pudge Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id = "app" class="container-fluid"></div>
+
+<div id="modal" class="modal">
+  <div class="modal-content" style="background: linear-gradient(to right, #7b11c7, #400529);">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <p style="font-weight: bold;"> BUY BOOST </p>
+      <button id = "bonus" style="font-weight: bold; background: linear-gradient(to right, #907d9e, #c00578);"> 10 points = +1 click</button>
+  </div>
+</div>
+
+</body>
+<script type="module" src="./js/script.js"></script>
+<script type="module" src="./js/counter.js"></script>
+<script type="module"src = "./classes/modalwindow.js"></script>
+
+</html>

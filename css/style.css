@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#counter {
+    color: #030000;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#clicker {
+    color: #030000;
+    height: 350px;
+    border-radius: 1500px;
+    cursor: pointer;
+}
+
+#clicker:active {
+    transition: 100;
+    transform: scale(1.025);
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированное положение */
+    z-index: 1; /* Поверх всех элементов */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Включить прокрутку при необходимости */
+    background-color: rgb(0,0,0); /* Черный фон */
+    background-color: rgba(0,0,0,0.4); /* Прозрачный черный фон */
+}
+
+.modal-content {
+    background-color: #bd13c9;
+    margin: auto; /* Центрирование модального окна */
+    margin-top: 300px;
+    padding: 20px;
+    border: 1px solid #6513b7;
+    width: 200px; /* Ширина модального окна */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
